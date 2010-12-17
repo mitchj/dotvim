@@ -21,7 +21,7 @@ set wildmode=list:longest
 :set foldenable
 
 " colorscheme chance-of-storm " http://www.vim.org/scripts/script.php?script_id=3347
-let moria_style="dark"
+let moria_style="dark" " just google 'moria'
 colorscheme moria
 
 " opens in Safari and Firefox
