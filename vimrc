@@ -50,3 +50,19 @@ endif
 
 " Nerd tree
 let NERDTreeShowHidden=1
+
+" Save when losing focus
+au FocusLost * :wa
+
+" Screw the help key!
+set fuoptions=maxvert,maxhorz
+inoremap <F1> <ESC> :set invfullscreen<CR>a
+nnoremap <F1> :set invfullscreen<CR>
+vnoremap <F1> :set invfullscreen<CR>
+
+" The manual key sucks, too!
+nnoremap K <nop>
+
+" Syntax
+au BufRead,BufNewFile *.tumblr.html set filetype=tumblr " Inky's tumblr syntax
+au BufRead,BufNewFile *less set filetype=less " less css
