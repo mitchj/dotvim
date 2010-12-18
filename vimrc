@@ -24,7 +24,7 @@ set wildmode=list:longest
 let moria_style="dark" " just google 'moria'
 colorscheme moria
 
-" opens in Safari and Firefox
+" opens file in Safari and Firefox
 abbrev ss :! open -a safari.app %:p<cr>
 abbrev ff :! open -a firefox.app%:p<cr>
 
