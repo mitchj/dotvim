@@ -6,6 +6,9 @@ filetype plugin on
 filetype indent on
 syntax on
 
+" Display current cursor position
+set ruler
+
 " Set stuff
 set autowrite
 set timeoutlen=500
