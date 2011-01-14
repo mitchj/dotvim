@@ -1,5 +1,5 @@
 " Mitch Johnson's .vimrc file.
-" http://github.com/mitchj/vim
+" http://github.com/mitchj/dotvim
 
 filetype on
 filetype plugin on
@@ -16,15 +16,14 @@ set nocompatible " Vi sucks!
 set number " Show line numbers
 set tabstop=3
 set shiftwidth=3
-set guifont=Menlo:h11
+set guifont=Menlo:h12
 set smartindent
 set autoindent
 set go-=T
 set wildmode=list:longest
 :set foldenable
 
-let moria_style="dark" " just google 'moria'
-colorscheme moria
+colorscheme southwest-fog
 
 " opens file in Safari and Firefox
 abbrev ss :! open -a safari.app %:p<cr>
