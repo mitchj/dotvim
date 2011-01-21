@@ -23,7 +23,7 @@ set go-=T
 set wildmode=list:longest
 :set foldenable
 
-colorscheme southwest-fog
+colorscheme neverland
 
 " opens file in Safari and Firefox
 abbrev ss :! open -a safari.app %:p<cr>
