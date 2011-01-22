@@ -21,7 +21,8 @@ set smartindent
 set autoindent
 set go-=T
 set wildmode=list:longest
-:set foldenable
+set foldenable
+set expandtab " use spaces for tabs
 
 colorscheme neverland
 
