@@ -7,46 +7,45 @@
 " If you'd like to add stuff to improve my .vimrc file, please fork this on
 " GitHub, add your changes, and then submit a push request!
 
+" Filetype
 filetype on
 filetype plugin on
 filetype indent on
 syntax on
 
-" Set stuff
-set autowrite
-set timeoutlen=500
-set nocompatible " Vi sucks!
-set number " Show line numbers
-set tabstop=3
-set shiftwidth=3
-set guifont=Menlo:h12
+" Tabs, spaces indentation
+set tabstop=3 " Number of spaces to use for tabs
+set shiftwidth=3 " Number of spaces to autoindent
 set smartindent
 set autoindent
-set go-=T
-set wildmode=list:longest
 set foldenable
-set ruler
 
-colorscheme neverland
+" Various configurations
+set autowrite
+set timeoutlen=500
+set nocompatible " Use Vim instead of Vi
+set wildmode=list:longest
+
+" Appearance configurations
+set number " Show line numbers
+set guifont=Menlo:h12 " Font-family: Menlo, Font-size: 12
+set go-=T " Hide MacVim toolbar by default
+set ruler
+colorscheme neverland " MacVim theme
 
 " opens file in Safari and Firefox
 abbrev ss :! open -a safari.app %:p<cr>
 abbrev ff :! open -a firefox.app%:p<cr>
-
-" Insert mode maps
-imap jj <esc>
 
 " Normal mode maps
 nmap ,ev :tabedit $MYVIMRC<cr>
 nmap <space> :
 nmap ,nt :NERDTree<cr>
 nmap ,b :buffer
-
-" Selects recently pasted text
-nnoremap <leader>v V']
-
-" :q > gqip
 nnoremap <leader>q gqip
+
+" Insert mode maps
+imap jj <esc>
 
 " Source .vimrc file (so I don't have to restart vim after saving)
 if has("autocmd")
@@ -58,15 +57,6 @@ let NERDTreeShowHidden=0
 
 " Save when losing focus
 au FocusLost * :wa
-
-" Screw the help key!
-set fuoptions=maxvert,maxhorz
-inoremap <F1> <ESC> :set invfullscreen<CR>a
-nnoremap <F1> :set invfullscreen<CR>
-vnoremap <F1> :set invfullscreen<CR>
-
-" The manual key sucks, too!
-nnoremap K <nop>
 
 " Syntax
 au BufRead,BufNewFile *.tumblr.html set filetype=tumblr " Inky's tumblr syntax
