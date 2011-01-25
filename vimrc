@@ -1,11 +1,5 @@
-" Mitch Johnson's .vimrc file.
-" http://github.com/mitchj/dotvim
-
-" Obviously, anyone is allowed to copy and use anything that's in my .vimrc
-" file!
-
-" If you'd like to add stuff to improve my .vimrc file, please fork this on
-" GitHub, add your changes, and then submit a push request!
+" Fork this on GitHub!
+" https://github.com/mitchj/dotvim/
 
 " Filetype
 filetype on
