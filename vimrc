@@ -12,9 +12,6 @@ filetype plugin on
 filetype indent on
 syntax on
 
-" Display current cursor position
-set ruler
-
 " Set stuff
 set autowrite
 set timeoutlen=500
@@ -28,7 +25,7 @@ set autoindent
 set go-=T
 set wildmode=list:longest
 set foldenable
-set expandtab " use spaces for tabs
+set ruler
 
 colorscheme neverland
 
@@ -57,7 +54,7 @@ if has("autocmd")
 endif
 
 " Nerd tree
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 
 " Save when losing focus
 au FocusLost * :wa
