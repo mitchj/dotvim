@@ -35,7 +35,8 @@ abbrev ff :! open -a firefox.app%:p<cr>
 nmap ,ev :tabedit $MYVIMRC<cr>
 nmap <space> :
 nmap ,nt :NERDTree<cr>
-nmap ,b :buffer
+nmap ,b :buffer<cr>
+nmap ,w3 :W3cValidate<cr>
 nnoremap <leader>q gqip
 
 " Insert mode maps
