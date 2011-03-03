@@ -34,7 +34,7 @@ set number " Show line numbers
 set guifont=Menlo:h12 " Font-family: Menlo, Font-size: 12
 set go-=T " Hide MacVim toolbar by default
 set ruler
-colorscheme dragon " MacVim theme
+colorscheme ir_black " MacVim theme
 
 " ------------------------------------------------------
 "	Remapping  
