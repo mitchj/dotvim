@@ -59,3 +59,4 @@ endif
 " ------------------------------------------------------
 au BufRead,BufNewFile *.tumblr.html set filetype=tumblr " Inky's tumblr syntax
 au BufRead,BufNewFile *less set filetype=less " less css
+au BufRead,BufNewFile *.css set ft=css syntax=css3 " css3 syntax
