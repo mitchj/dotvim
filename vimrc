@@ -1,4 +1,9 @@
 " ------------------------------------------------------
+"  Mitch Johnson's .vimrc file
+"  https://github.com/mitchj/dotvim
+" ------------------------------------------------------
+
+" ------------------------------------------------------
 "  Files and syntax
 " ------------------------------------------------------
 filetype on
@@ -35,7 +40,7 @@ set number " Show line numbers
 set guifont=Menlo:h12 " Font-family: Menlo, Font-size: 12
 set go-=T " Hide MacVim toolbar by default
 set ruler
-colorscheme solarized
+colorscheme solarized " http://www.vim.org/scripts/script.php?script_id=3520
 "colorscheme ir_black MacVim theme
 
 " ------------------------------------------------------
@@ -45,6 +50,7 @@ nmap ,ev :tabedit $MYVIMRC<cr>
 nmap <space> :
 nmap ,nt :NERDTree<cr>
 nmap ,b :buffer<cr>
+" validate html files
 nmap ,w3 :W3cValidate<cr>
 nnoremap <leader>q gqip
 imap jj <esc>
