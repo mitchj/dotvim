@@ -25,7 +25,8 @@ set wildmode=list:longest
 au FocusLost * :wa " Save file when window loses focus
 abbrev ss :! open -a safari.app %:p<cr>
 abbrev ff :! open -a firefox.app%:p<cr>
-let NERDTreeShowHidden=0 " Don't show hidden files
+abbrev gg :! open -a google chrome.app%:p<cr>
+let NERDTreeShowHidden=1 " Don't show hidden files
 
 " ------------------------------------------------------
 "	UI  
@@ -34,7 +35,8 @@ set number " Show line numbers
 set guifont=Menlo:h12 " Font-family: Menlo, Font-size: 12
 set go-=T " Hide MacVim toolbar by default
 set ruler
-colorscheme ir_black " MacVim theme
+colorscheme solarized
+"colorscheme ir_black MacVim theme
 
 " ------------------------------------------------------
 "	Remapping  
