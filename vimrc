@@ -16,7 +16,7 @@ syntax on
 " ------------------------------------------------------
 set tabstop=3 " Number of spaces to use for tabs
 set shiftwidth=3 " Number of spaces to autoindent
-set smartindent
+set smartindent " smart indent on
 set autoindent
 set foldenable
 
